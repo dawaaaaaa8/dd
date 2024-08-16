@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Room Monitoring</title>
+    <link rel="stylesheet" href="sensor.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <img src="logo.png" alt="Green Group Logo" class="logo">
+                <span>SERVER ROOM MONITORING</span>
+            </div>
+            <div class="header-right">
+                <span class="time">12:25</span>
+                <span class="date">23.05.2024</span>
+                <img src="home-icon.png" alt="Home" class="home-icon">
+            </div>
+        </header>
+        <aside class="sidebar">
+            <ul>
+                <li>Dashboard</li>
+                <li>Report</li>
+                <li class="active">Sensor status</li>
+            </ul>
+        </aside>
+        <main>
+            <h2>Sensor status</h2>
+            <div class="sensor-grid">
+                <div class="sensor-card">
+                    <h3>Voltage sensor 1</h3>
+                    <p class="status active">Active</p>
+                    <p class="ip">192.168.1.1</p>
+                    <p class="response-time">1 ms</p>
+                </div>
+                <div class="sensor-card">
+                    <h3>Voltage sensor 2</h3>
+                    <p class="status offline">Offline</p>
+                    <p class="ip">192.168.1.2</p>
+                    <p class="response-time">ms</p>
+                </div>
+                <div class="sensor-card">
+                    <h3>Temperature sensor</h3>
+                    <p class="status active">Active</p>
+                    <p class="ip">192.168.1.3</p>
+                    <p class="response-time">5 ms</p>
+                </div>
+                <div class="sensor-card">
+                    <h3>Door sensor</h3>
+                    <p class="status active">Active</p>
+                    <p class="ip">192.168.1.4</p>
+                    <p class="response-time">5 ms</p>
+                </div>
+                <div class="sensor-card">
+                    <h3>Camera</h3>
+                    <p class="status active">Active</p>
+                    <p class="ip">192.168.1.5</p>
+                    <p class="response-time">6 ms</p>
+                </div>
+                <div class="sensor-card">
+                    <h3>Fire alarm</h3>
+                    <p class="status active">Active</p>
+                    <p class="ip">192.168.1.6</p>
+                    <p class="response-time">1 ms</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

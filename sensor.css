@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #708090;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .time,
+.header-right .date {
+    margin-right: 15px;
+}
+
+.home-icon {
+    height: 30px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #5F6A7D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #7D899B;
+    cursor: pointer;
+}
+
+.sidebar ul li.active {
+    background-color: #708090;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.sensor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.sensor-card {
+    background-color: #D3D3D3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sensor-card h3 {
+    margin-bottom: 15px;
+}
+
+.sensor-card .status.active {
+    color: green;
+}
+
+.sensor-card .status.offline {
+    color: red;
+}
+
+.sensor-card .ip {
+    margin: 10px 0;
+}
+
+.sensor-card .response-time {
+    font-weight: bold;
+}

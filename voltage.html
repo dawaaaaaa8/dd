@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Room Monitoring</title>
+    <link rel="stylesheet" href="voltage.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <img src="logo.png" alt="Green Group Logo" class="logo">
+                <span>SERVER ROOM MONITORING</span>
+            </div>
+            <div class="header-right">
+                <span class="time">12:25</span>
+                <span class="date">23.05.2024</span>
+                <img src="home-icon.png" alt="Home" class="home-icon">
+            </div>
+        </header>
+        <aside class="sidebar">
+            <ul>
+                <li>Dashboard</li>
+                <li>Report</li>
+                <li class="active">Sensor status</li>
+            </ul>
+        </aside>
+        <main>
+            <h2>Voltage Monitoring</h2>
+            <div class="report-icons">
+                <img src="xls-icon.png" alt="Export as XLS" class="report-icon">
+                <img src="pdf-icon.png" alt="Export as PDF" class="report-icon">
+            </div>
+            <div class="voltage-grid">
+                <div class="voltage-card">
+                    <h3>Main voltage</h3>
+                    <div class="gauge">
+                        <div class="gauge-content">375 V</div>
+                    </div>
+                </div>
+                <div class="voltage-card">
+                    <h3>Minimum voltage</h3>
+                    <div class="gauge">
+                        <div class="gauge-content">340 V</div>
+                    </div>
+                </div>
+                <div class="voltage-card">
+                    <h3>Maximum voltage</h3>
+                    <div class="gauge">
+                        <div class="gauge-content">390 V</div>
+                    </div>
+                </div>
+                <div class="voltage-card large">
+                    <h3>Voltage distribution</h3>
+                    <div class="bar-chart"></div>
+                </div>
+                <div class="voltage-card">
+                    <h3>Average voltage</h3>
+                    <div class="gauge">
+                        <div class="gauge-content">360 V</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

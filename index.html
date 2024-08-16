@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Room Monitoring Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef1f5;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #8da5ab;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            padding: 20px;
+            color: white;
+        }
+
+        .sidebar h1 {
+            font-size: 20px;
+            margin: 0 0 20px 0;
+            font-weight: normal;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header div {
+            font-size: 16px;
+            color: #6e8084;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin: 0 0 15px 0;
+            color: #6e8084;
+        }
+
+        .card .value {
+            font-size: 32px;
+            color: #5aa1c9;
+        }
+
+        .card .icon {
+            font-size: 50px;
+            color: #5aa1c9;
+            margin-bottom: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h1>GREEN GROUP</h1>
+    <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a href="sesor.html">Sensor status</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="header">
+        <div>SERVER ROOM MONITORING</div>
+        <div>12:25 | 23.05.2024</div>
+    </div>
+
+    <div class="dashboard">
+        <div class="card">
+            <h3>Main voltage</h3>
+            <div class="value">375 V</div>
+        </div>
+        <div class="card">
+            <h3>Generator voltage</h3>
+            <div class="value">0 V</div>
+        </div>
+        <div class="card">
+            <h3>UPTIME</h3>
+            <div class="value">72.8 hours</div>
+        </div>
+        <div class="card">
+            <h3>Environment</h3>
+            <div class="value">Temp 17°C</div>
+            <div class="value">Humidity 40%</div>
+        </div>
+        <div class="card">
+            <h3>Door</h3>
+            <div class="value">Close</div>
+        </div>
+        <div class="card">
+            <h3>Live stream</h3>
+            <iframe src="https://youtu.be/koFvBJSYYM8?si=33PFSrCzPtUEooa4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>
